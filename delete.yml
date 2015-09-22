@@ -1,0 +1,6 @@
+---
+- hosts: all
+  remote_user: test
+  tasks:
+  - name: delete /tmp/server-test
+    shell: rm -rf /tmp/server-test

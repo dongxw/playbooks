@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+
+remote_user: root
+
+tasks:
+
+- name: Copy file to client
+
+copy: src=/etc/myconf.conf dest=/etc/myconf.conf
+
+owner=root group=root mode=0644

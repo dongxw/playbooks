@@ -1,0 +1,6 @@
+---
+- hosts: all
+  remote_user: root
+  tasks:
+  - name: touch /tmp/server-test
+    shell: touch /tmp/server-test
